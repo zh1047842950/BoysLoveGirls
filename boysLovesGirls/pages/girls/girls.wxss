@@ -1,0 +1,44 @@
+/* girls.wxss */
+
+
+.girlType {
+  padding: 10rpx;
+}
+
+.girlTypeHead {
+  background-color: lightblue;
+  height: 10vh;
+  line-height: 10vh;
+  vertical-align: middle;
+  border-radius: 5vw;
+  padding: 0 3vw;
+}
+
+.girlTypeHead view {
+  display: inline-block;
+}
+
+.more {
+  float: right;
+  line-height: 10vh;
+}
+
+.moreImg {
+  width: 7vw;
+  height: 7vw;
+  vertical-align: middle;
+}
+
+.topImgView {
+  height: 34vh;
+  padding: 2vh 2vw;
+  /*display: flex;
+  flex-direction: row;*/
+  white-space: nowrap;
+}
+
+.topImg {
+  width: 80%;
+  height: 100%;
+  margin: 0 ;
+}

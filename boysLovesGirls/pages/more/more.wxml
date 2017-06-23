@@ -1,0 +1,11 @@
+<!--more.wxml-->
+<view class="box">
+  <view class="item" wx:for="{{items}}" wx:key="{{index}}">
+
+    <image src="{{item.img}}"></image>
+    <text class="title">{{item.title}}</text>
+    <text class="date">{{item.date}}</text>
+
+  </view>
+
+</view>

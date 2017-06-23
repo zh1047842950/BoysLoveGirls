@@ -1,0 +1,33 @@
+<!--girls.wxml-->
+<view class="classname">
+
+  <!--<view wx:for="{{user}}"  wx:key="{{index}}">
+    user:{{index}}
+    <text>name:{{item.name}}</text>
+    <text>age:{{item.skill}}</text>
+  </view>-->
+
+
+
+  <block wx:for="{{identityResult.data}}" wx:key="{{index}}">
+
+    <view class="girlType">
+      <view class="girlTypeHead">
+        <view class="title"> {{ item.name }}</view>
+        <view class="more" catchtap="getMore" data-name="{{item.name}}" data-type="{{item.type}}" >
+          <text>更多</text>
+          <image class="moreImg" src="../../image/more01.png"></image>
+        </view>
+      </view>
+
+      <scroll-view class="topImgView" scroll-x >
+      
+        <image class="topImg" wx:for="{{item.top}}" wx:for-item="top" src="{{top.img}}" wx:key="index" ></image>
+      
+      </scroll-view>
+    </view>
+
+  </block>
+
+
+</view>

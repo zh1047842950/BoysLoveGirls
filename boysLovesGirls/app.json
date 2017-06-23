@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/boys/boys",
+    "pages/girls/girls",
+    "pages/children/children",
+    "pages/more/more"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "red",
+    "navigationBarTitleText": "男神loves女神",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/boys/boys",
+        "text": "男神",
+        "iconPath": "image/boys1.png",
+        "selectedIconPath": "image/boys2.png"
+      },
+      {
+        "pagePath": "pages/girls/girls",
+        "text": "女神",
+        "iconPath": "image/girls1.png",
+        "selectedIconPath": "image/girls2.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

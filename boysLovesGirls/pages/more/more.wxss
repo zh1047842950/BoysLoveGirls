@@ -1,0 +1,19 @@
+/* more.wxss */
+.box{
+  padding: 2vh 2vw;
+ 
+}
+.item{
+  display: inline-block;
+  width: 30vw;
+  height: 30vh;
+  margin: 2vh 1vw;
+ 
+}
+image{
+  width: 100%;
+  height: 80%;
+}
+text{
+  font-size: 12px;
+}

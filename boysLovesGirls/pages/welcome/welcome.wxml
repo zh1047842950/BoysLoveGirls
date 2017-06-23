@@ -1,0 +1,9 @@
+<!--welcome.wxml-->
+
+
+<view class="box">
+
+<image src="../../image/bg01.jpg"></image>
+<button bindtap='enter'>进入男神女神世界</button>
+</view>
+

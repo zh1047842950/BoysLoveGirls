@@ -1,0 +1,37 @@
+<!--boys.wxml-->
+
+<image hidden="{{coverImgShow}}" id="coverImg" src="../../image/bg02.jpg"></image>
+
+<view class="classname">
+
+  <block wx:for="{{identityResult.data}}" wx:key="{{index}}">
+
+    <view class="girlType">
+      <view class="girlTypeHead">
+        <view class="title"> {{ item.name }}</view>
+        <view class="more" catchtap="getMore" data-name="{{item.name}}" data-type="{{item.type}}" >
+          <text>更多</text>
+          <image class="moreImg" src="../../image/more01.png"></image>
+        </view>
+      </view>
+
+      <!--<scroll-view class="topImgView" scroll-x >
+      
+      <image class="topImg" wx:for="{{item.top}}" wx:for-item="top" src="{{top.img}}"  ></image>
+      
+      </scroll-view>-->
+
+      <swiper class="topImgView" autoplay circular interval="2000">
+      
+        <swiper-item class="topImgItem" wx:for="{{item.top}}"  wx:for-item="top"  wx:key="index" >
+         <image  src="{{top.img}}" class="topImg" ></image>
+        </swiper-item>
+
+      </swiper>
+
+    </view>
+
+  </block>
+
+
+</view>
